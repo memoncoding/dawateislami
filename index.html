@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dawateislami.net</title>
+    <link rel="icon" type="img/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #232222; */
+}
+    
+.one{
+    /* border: 1px solid #000; */
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    position: fixed;
+    align-content: center;
+}
+.text{
+    /* background-color: #fff; */
+    align-items: center;
+    display: flex;
+    margin-left: 5%;
+    padding-left: 15px;
+}
+img{
+    padding: 10px;
+    display: flex;
+}
+.two{
+    border: 1px solid #000;
+    background-color: #3b3b79;
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    padding-top: 35px;
+}
+.twol{
+    display: flex;
+}
+.text2{
+    /* border: 1px solid #b36c16; */
+    background-color: #b36c16;
+    margin-left: 1%;
+    height: 30px;
+    color: #fff;
+}
+.text2l{
+    /* border: 1px solid #000; */
+    background-color: #ec4e4e;
+    height: 30px;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 2px 15px 2px 15px;
+}
+.three{
+    /* border: 1px solid #000; */
+    background-color: #fafafc;
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+.text3{
+    /* border: 1px solid #b36c16; */
+    background-color: #211f1f;
+    margin-left: 1%;
+    height: 30px;
+    color: #fff;
+    transition: 0.2s;
+}
+.text3:hover{
+    color: #c43939;
+    cursor: pointer;
+}
+.text3l{
+    /* border: 1px solid #b36c16; */
+    background-color: #c43939;
+    margin-left: 1%;
+    height: 30px;
+    color: #fff;
+    transition: 0.3s;
+}
+.text3l:hover {
+    color: #211f1f;
+}
+.Dlogo{
+    width: 20%;
+    height: 80px;
+}
+.four{
+    /* border: 1px solid #000; */
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-top: 0.5px #4e4d4d solid;
+    border-bottom: 0.5px #4e4d4d solid;
+    position: sticky;
+    top: 7%;
+}
+.grip{
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    width: 50px;
+    align-items: flex-start;
+}
+.srch{
+    border: 1px solid #000;
+    height: 40px;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: 50%;
+    padding-left: 50px;
+
+}
+.magnify{
+    border: 1px solid #000;
+    border-radius: 0px 20px 20px 0px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 40px;
+    padding: 8px;
+    margin-right: 3%;
+
+}
+.sidebtn{
+    /* border: 1px solid #000; */
+    border-radius: 25px;
+    background-color: #c43939;
+    color: #fff;
+    width: 8%;
+    height: 40px;
+    margin-right: 0.5%;
+}
+.bdy{
+    border: 1px solid #000;
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.bdy>img{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px;
+    height: 500px;    
+}
+.container1{
+    border: 1px solid #000;
+    background-image: url(img/texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 1000px;
+}
+.card1{
+    /* border: solid; */
+    background-color: rgba(117, 113, 113, 0.5);
+    width: 90%;
+    height: 900px;
+    margin: auto;
+    margin-top: 2%;
+    box-sizing: border-box;
+}
+.card1>img{
+    width: 100%;
+    height: 300px;
+    padding: 0px;
+    padding-bottom: 6px;
+}
+.card1>h3{
+    margin: 5px 0px;
+    color: #fff;
+}
+.card1>p{
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #fff;
+}
+.card1>button{
+    border: 1px solid #000;
+    height: 40px;
+    background-color: #c43939;
+}
+.card1>button>a{
+    padding: 50px 10px;
+}
+.navbar{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navitem{
+    border:1px solid #000;
+    background-color: #393838;
+    color: #fff;
+    padding: 12px 57px;
+    /* margin-left: 2%; */
+}
+#red{
+    background-color: #c43939;
+}
+.container2{
+    display: flex;
+    margin-top: 2%;
+    gap: 20px;
+    justify-content: center;
+    transition: transform 1.5s ease;
+}
+.container2 :hover{
+    transform: scale(1.05);
+}
+.card3{
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #211f1f;
+    width: 30%;
+    height: 350px;
+    margin-left: 1%;
+}
+.card3 > img{
+    /* border: 1px solid #000; */
+    border-radius: 5px 0px 0px 5px;
+    padding: 0px;
+    width: 100%;
+}
+.card3 > h1{
+    margin-top: 7%;
+    margin-bottom: 10%;
+    color: #fff;
+    border-left: 2px solid #c43939;
+    transition: color 1.5s ease;
+    padding-left: 12px;
+}
+.card3 > h1:hover{
+    color: #c43939;
+    border-left:1px solid #fff;
+}
+.card3 > .arrow{
+    border:1px solid #000;
+    background-color: #3b3b79;
+    padding: 10px 20px;
+    margin-left: 5%;
+    color: #fff;    
+}
+.card3 > .search{
+    border:1px solid #000;
+    background-color: #3b3b79;
+    padding: 10px 25px;
+    color: #fff;    
+}
+.card4{
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #211f1f;
+    width: 30%;
+    height: 350px;
+    margin-left: 1%;
+}
+.card4 > img{
+    /* border: 1px solid #000; */
+    border-radius: 5px 0px 0px 5px;
+    padding: 0px;
+    width: 100%;
+}
+.card4 > h1{
+    margin-top: 7%;
+    margin-bottom: 10%;
+    color: #fff;
+    border-left: 2px solid #c43939;
+    transition: color 1.5s ease;
+    padding-left: 12px;
+}
+.card4 > h1:hover{
+    color: #c43939;
+    border-left:1px solid #fff;
+}
+.card4 > .arrow{
+    border:1px solid #000;
+    background-color: #3b3b79;
+    padding: 10px 20px;
+    margin-left: 5%;
+    color: #fff;    
+}
+.card4 > .search{
+    border:1px solid #000;
+    background-color: #3b3b79;
+    padding: 10px 25px;
+    color: #fff;    
+}
+.card5{
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #211f1f;
+    width: 30%;
+    height: 350px;
+    margin-left: 1%;
+}
+.card5 > img{
+    /* border: 1px solid #000; */
+    border-radius: 5px 0px 0px 5px;
+    padding: 0px;
+    width: 100%;
+}
+.card5 > h1{
+    margin-top: 7%;
+    margin-bottom: 10%;
+    color: #fff;
+    border-left: 2px solid #c43939;
+    transition: color 1.5s ease;
+    padding-left: 12px;
+}
+.card5 > h1:hover{
+    color: #c43939;
+    border-left:1px solid #fff;
+}
+.card5 > .arrow{
+    border:1px solid #000;
+    background-color: #3b3b79;
+    padding: 10px 20px;
+    margin-left: 5%;
+    color: #fff;    
+}
+.card5 > .search{
+    border:1px solid #000;
+    background-color: #3b3b79;
+    padding: 10px 25px;
+    color: #fff;    
+}
+.container3{
+    /* border: 1px solid #000; */
+    width: 100%;
+    box-sizing: border-box; 
+    display: flex;
+    gap: 10px;
+    margin-top: 5%;
+    /* align-items: center; */
+}
+.crd1{
+    /* border: 1px solid #000; */
+    width: 30%;
+    height: 200px;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 5%;
+}
+.crd1 > button{
+    /* border: 1px solid #000; */
+    color: #c43939;
+    padding: 3px 20px;
+    font-size: large;
+    margin-bottom: 3%;
+}
+.crd1 > h1{
+    text-align: left;
+}
+.crd2{
+    /* border: 1px solid #000; */
+    width: 30%;
+    height: 200px;
+    background-color: #3b3b79;
+    color: #fff;
+    /* text-align: center; */
+    /* align-content: center; */
+    justify-content: center;
+    padding-top: 5px;
+    margin-left: 5%;
+}
+.crd2 > i{
+    font-size: 50px;
+    padding: 10px 20px 2px 120px ;
+}
+.crd2 > h1{
+    text-align: center;
+    margin-bottom: 4%;
+}
+.crd2 > p{
+    text-align: center;
+    margin: 4%;
+}
+.crd3{
+    /* border: 1px solid #000; */
+    width: 30%;
+    height: 200px;
+    /* text-align: center; */
+    /* align-content: center; */
+    justify-content: center;
+    padding-top: 5px;
+    margin-left: 0.5%;
+    transition: background-color 2s, color 0.5s;
+}
+.crd3:hover{
+    background-color: #3b3b79;
+    color: #fff;
+} 
+.crd3 > img{
+    width: 80px;
+    padding: 2px 0px 2px 110px ;
+}
+.crd3 > img:hover{
+    color: #fff;
+}
+.crd3 > h1{
+    text-align: center;
+    margin-bottom: 4%;
+}
+.crd3 > p{
+    text-align: center;
+    margin: 4%;
+}
+.container4{
+    /* border: 1px solid #000; */
+    width: 100%;
+    box-sizing: border-box; 
+    display: flex;
+    gap: 10px;
+    /* margin-top: %; */
+    /* align-items: center; */
+}
+.crd4{
+    /* border: 1px solid #000; */
+    width: 30%;
+    height: 200px;
+    /* text-align: center; */
+    align-content: center;
+    padding-top: 5px;
+    margin-left: 5%;
+    transition: background-color 2s, color 0.5s;
+}
+.crd4:hover{
+    background-color: #3b3b79;
+    color: #fff;
+} 
+.crd4 > i{
+    font-size: 50px;
+    padding: 2px 0px 2px 120px ;
+}
+.crd4 > h1{
+    text-align: center;
+    margin-bottom: 4%;
+}
+.crd4 > p{
+    text-align: center;
+    margin: 4%;
+}
+.crd5{
+    /* border: 1px solid #000; */
+    width: 30%;
+    height: 200px;
+    /* text-align: center; */
+    align-content: center;
+    padding-top: 5px;
+    margin-left: 5%;
+    transition: background-color 2s, color 0.5s;
+}
+.crd5:hover{
+    background-color: #3b3b79;
+    color: #fff;
+}
+.crd5 > i{
+    font-size: 50px;
+    padding: 2px 0px 2px 120px ;
+}
+.crd5 > h1{
+    text-align: center;
+    margin-bottom: 4%;
+}
+.crd5 > p{
+    text-align: center;
+    margin: 4%;
+}
+.crd6{
+    /* border: 1px solid #000; */
+    width: 30%;
+    height: 200px;
+    /* text-align: center; */
+    align-content: center;
+    padding-top: 5px;
+    margin-left: 5%;
+    transition: background-color 2s, color 0.5s;
+}
+.crd6:hover{
+    background-color: #3b3b79;
+    color: #fff;
+}
+.crd6 > img{
+    width: 80px;
+    padding: 2px 0px 2px 100px ;
+}
+.crd6 > h1{
+    text-align: center;
+    margin-bottom: 4%;
+}
+.crd6 > p{
+    text-align: center;
+    margin: 4%;
+}
+
+
+</style>
+
+</head>
+<body>
+    <header class="one">
+        <div class="text">You Can Also Visit Our Countries Websites</div>
+        <img src="img/eart.jpeg" alt="" class="Countries">
+        <img src="img/pak.jpeg" alt="" class="Countries">
+        <img src="img/china.jpeg" alt="" class="Countries">
+        <img src="img/bangladesh.jpeg" alt="" class="Countries">
+        <img src="img/turkey.jpeg" alt="" class="Countries">
+    </header>
+    <header class="two">
+    الحمد للّٰه رب العالمين والصلاه والسلام على سيد الانبياء والمرسلين٫ اما بعد فاعوذ باللّٰه من الشيطن الرجيم، بسم الله الرحمن الرحيم
+        <button class="text2"><a href="">Languages</a></button>
+        <button class="text2l"><a href="">Websites</a></button>    
+    </header>
+    <header class="three">
+        <button class="text3"><a href="">Al Quran</a></button>
+        <button class="text3"><a href="">Books</a></button>
+        <button class="text3l"><a href="">Madani Channel</a></button>
+
+        <img src="img/dawateislami_logo-removebg-preview.png" alt="" class="Dlogo">
+
+        <button class="text3l"><a href="">Magazine</a></button>
+        <button class="text3"><a href="">Courses</a></button>
+        <button class="text3"><a href="">Media</a></button>
+    </header>
+    <header class="four">
+        <a href=""><img src="img/grip-solid-full.svg" alt="" class="grip"></a>
+        <input type="search" class="srch">
+        <img src="img/magnifying-glass-solid-full.svg" alt="" class="magnify">
+        <button class="sidebtn"><a href="">Donate</a></button>
+        <button class="sidebtn"><a href="">Feedback</a></button>
+    </header>
+    <div class="bdy">
+        <img src="img/telethon.jpg" alt="">
+    </div>
+    <div class="container1">
+        <div class="card1">
+            <img src="img/bapa.jpeg" alt="">
+            <h3>AMEER-E-AHL-E-SUNNAT MAULANA ILYAS QADRI</h3>
+            <p>Maulana Ilyas Qadri, the founder of Dawateislami. Ameer e ahle Sunnat is recognized for his profound impact on individuals, inspiring them to embrace righteousness and gives spiritual guide. Here you may read more about his spiritual life.</p>
+            <button><a href="">Visit Website</a></button>
+            <br>
+            <br>
+            <div class="card2">
+                <ul class="navbar">
+                   <li class="navitem" id="red">Vedios</li>
+                   <li class="navitem">Books</li>
+                   <li class="navitem">Activities</li>
+                   <li class="navitem">Madani Channel</li>
+                </ul>
+            </div>
+            <div class="container2">
+                <div class="card3">
+                   <img src="img/madina.jpeg" alt="">
+                   <h1>Islam Is The Ledder To Sucess</h1>
+                   <a href="" class="arrow">→</a>
+                   <a href="" class="search">Search</a>
+                </div>
+                <div class="card4">
+                    <img src="img/madina.jpeg" alt="">
+                    <h1>How To Increase Children Interest</h1>
+                    <a href="" class="arrow">→</a>
+                    <a href="" class="search">Search</a>
+                </div>
+                <div class="card5">
+                    <img src="img/madina.jpeg" alt="">
+                    <h1>How To Pay Gratitude</h1>
+                    <a href="" class="arrow">→</a>
+                    <a href="" class="search">Search</a>
+                </div>                
+            </div>                         
+        </div>
+   </div>
+   <div class="container3">
+    <div class="crd1">
+        <button>DISCOVER ISLAM</button>
+        <h1>5 PILLARS OF ISLAM</h1>
+    </div>
+    <div class="crd2">
+        <i class="fas fa-mosque"></i>
+        <h1>Faith/Shahada</h1>
+        <p>Belief in the Unity of Allah and Prophet Muhammad [peace be upon him] as Allah's massenger</p>
+    </div>
+    <div class="crd3">
+        <img src="img/men_salah-removebg-preview.png" alt="mensalah">
+        <h1>Prayer/Salah</h1>
+        <p>The act of worshipping Allah five times a day throughout your life</p>
+    </div>
+   </div>
+   <div class="container4">
+    <div class="crd4">
+        <i class="fas fa-hands-helping"></i>
+        <h1>Alms/Zakat</h1>
+        <p>Sharing a certain Percantage of your wealth with less fortunate every year</p>
+    </div>
+    <div class="crd5">
+        <i class="fas fa-kaaba"></i>
+        <h1>Pilgrimage/Hajj</h1>
+        <p>A Spritual Duty that every Muslim must offer once in thier life, if able.</p>
+    </div>
+    <div class="crd6">
+        <img loading="lazy" src="https://data2.dawateislami.net/static/images/main-website/global/fasting.png" alt="roza">
+        <h1>Fastng/Roza</h1>
+        <p>Fasting From Dawn to dust for 30 days in the holy month of Ramadan</p>
+    </div>
+   </div>
+</body>
+</html>
+
+
